@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E22FBB11223ACF600069C903 /* DeviceDetailViewControllerUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22FBB10223ACF600069C903 /* DeviceDetailViewControllerUIViewController.swift */; };
 		E26410DC22382FED00B385A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26410DB22382FED00B385A4 /* AppDelegate.swift */; };
 		E26410DE22382FED00B385A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26410DD22382FED00B385A4 /* ViewController.swift */; };
 		E26410E122382FED00B385A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E26410DF22382FED00B385A4 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E22FBB10223ACF600069C903 /* DeviceDetailViewControllerUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDetailViewControllerUIViewController.swift; sourceTree = "<group>"; };
 		E26410D822382FED00B385A4 /* MyStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E26410DB22382FED00B385A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E26410DD22382FED00B385A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				E26410E722382FF000B385A4 /* LaunchScreen.storyboard */,
 				E26410EA22382FF000B385A4 /* Info.plist */,
 				E26410E222382FED00B385A4 /* MyStore.xcdatamodeld */,
+				E22FBB10223ACF600069C903 /* DeviceDetailViewControllerUIViewController.swift */,
 			);
 			path = MyStore;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			files = (
 				E26410DE22382FED00B385A4 /* ViewController.swift in Sources */,
 				E26410E422382FED00B385A4 /* MyStore.xcdatamodeld in Sources */,
+				E22FBB11223ACF600069C903 /* DeviceDetailViewControllerUIViewController.swift in Sources */,
 				E26410DC22382FED00B385A4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
