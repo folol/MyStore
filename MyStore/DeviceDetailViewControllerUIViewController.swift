@@ -16,14 +16,18 @@ class DeviceDetailViewControllerUIViewController: UIViewController {
     @IBOutlet weak var companyTF: UITextField!
     
     @IBAction func cancelButtonPress(_ sender: Any) {
-         self.navigationController?.popViewController(animated: true)
+        //self.navigationController?.popViewController(animated: false)
+        dismiss(animated: true, completion: nil)
     }
     
     @IBAction func saveButtonPress(_ sender: Any) {
+        let nameStr = nameTF.text
+        let versionStr = versionTF.text
+        let companyStr = companyTF.text
         
-        if let nameStr = nameTF.text {
-            if let versionStr = versionTF.text {
-                if let companyStr = companyTF.text {
+        if nameStr?.isEmpty != true {
+            if versionStr?.isEmpty != true {
+                if companyStr?.isEmpty != true {
                     guard let appDelegate =
                         UIApplication.shared.delegate as? AppDelegate else {
                             return
@@ -40,13 +44,14 @@ class DeviceDetailViewControllerUIViewController: UIViewController {
                     person.setValue(companyStr, forKey: "company")
                     do {
                         try managedContext.save()
-                        self.navigationController?.popViewController(animated: true)
+                        //self.navigationController?.popViewController(animated: false)
+                        dismiss(animated: true, completion: nil)
                     } catch let error as NSError {
                         print("Could not save. \(error), \(error.userInfo)")
                     }
                 }
                 else{
-                    showAlert(title: "Error", message: "Enter country")
+                    showAlert(title: "Error", message: "Enter company")
                     return
                 }
             }

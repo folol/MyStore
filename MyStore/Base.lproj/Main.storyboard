@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hNQ-EU-e4d">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qbB-xm-ZUg">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -79,16 +79,19 @@
                                                 <rect key="frame" x="16" y="7" width="83" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Cancel"/>
+                                                <connections>
+                                                    <action selector="cancelButtonPress:" destination="1ZK-Lr-dgX" eventType="touchUpInside" id="viU-cx-65d"/>
+                                                </connections>
                                             </button>
-                                            <connections>
-                                                <action selector="cancelButtonPress:" destination="1ZK-Lr-dgX" id="1DG-hJ-wsH"/>
-                                            </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" style="plain" id="yIz-am-QEP">
                                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="S44-vH-hX2">
                                                 <rect key="frame" x="276" y="7" width="83" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Save"/>
+                                                <connections>
+                                                    <action selector="saveButtonPress:" destination="1ZK-Lr-dgX" eventType="touchUpInside" id="6cA-3y-Up8"/>
+                                                </connections>
                                             </button>
                                             <connections>
                                                 <action selector="saveButtonPress:" destination="1ZK-Lr-dgX" id="aWs-8E-VV3"/>
@@ -111,7 +114,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Country" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LOn-Pc-SZC">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Company" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LOn-Pc-SZC">
                                 <rect key="frame" x="16" y="201" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
@@ -123,7 +126,7 @@
                         <viewLayoutGuide key="safeArea" id="kxG-3d-GqU"/>
                     </view>
                     <connections>
-                        <outlet property="countryTF" destination="LOn-Pc-SZC" id="wJf-aU-rhs"/>
+                        <outlet property="companyTF" destination="LOn-Pc-SZC" id="UTD-KK-7BP"/>
                         <outlet property="nameTF" destination="AQi-QK-jIR" id="7mP-ep-Rrs"/>
                         <outlet property="versionTF" destination="3QB-NK-IQu" id="93J-a0-j50"/>
                     </connections>
